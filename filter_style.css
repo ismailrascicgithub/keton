@@ -1,0 +1,80 @@
+.load-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0px auto;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-button:hover {
+    background-color: #333;
+}
+
+.load-more-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+
+.filter-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #888888;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+    color: #000;
+}
+
+.filter-button.filter-active {
+    color: #000;
+    border-color: #000;
+}
+
+.filter-button:focus {
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .elementor-widget-bacola_product_carousel2 {
+        display: none;
+    }
+
+    .elementor-widget-bacola_product_grid3 {
+        display: block;
+    }
+}
+
+.elementor-widget-bacola_product_grid3 .product-content-fade {
+    margin-bottom: -49px !important;
+
+}
+
+@media (max-width: 992px) {
+    .elementor-widget-bacola_product_carousel2 {
+        display: block;
+    }
+
+    .elementor-widget-bacola_product_grid3 {
+        display: none;
+    }
+}
